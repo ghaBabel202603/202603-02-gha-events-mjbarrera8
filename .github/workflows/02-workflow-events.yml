@@ -1,7 +1,9 @@
 name: 02 - Eventos
 on:
-  - push
-  - workflow_dispatch
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 18 2 3 *'
 
 jobs:
   saludo: 
